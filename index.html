@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+      <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+            <title>
+                  Ice Shield | Advanced Discord Bot
+            </title>
+            <meta name="description" content="Ice Shield, bot discord avancé. Il possède des fonctions de modération, de gestion, d'utilitaire et de fun. Venez découvrir ses nombreuses qualités et choisissez le pour votre serveur !">
+            <meta name="keywords" content="Bot,Discord,Modération,Moderation,Fun,Utilitaire,Musique,Gestion">
+            <link rel="shortcut icon" href="favicon.ico">
+            <link rel="shortcut icon" href="static/images/favicons/favicon.png" type="image/x-icon">
+            <link rel="apple-touch-icon" href="static/images/favicons/apple-touch-icon.png">
+            <link rel="apple-touch-icon-precomposed" href="static/images/favicons/apple-touch-icon-precomposed.png">
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800%7COpen+Sans+Condensed:300&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+            <link rel="stylesheet" href="static/css/screen.min.css">
+            <link rel="stylesheet" href="static/css/custom.min.css">
+            <script src="static/js/head.min.js"></script>
+      </head>
+      <body>
+            <script>progressJs().setOptions({overlayMode: true, theme: 'custom'}).start();
+      if(window.attachEvent) {
+          window.attachEvent('onload', function(){ progressJs().end(); });
+      } else {
+          if(window.onload) {
+              var curronload = window.onload;
+              var newonload = function() {
+                  curronload();
+                  progressJs().end();
+              };
+              window.onload = newonload;
+          } else {
+              window.onload = function(){ progressJs().end(); };
+          }
+      }</script>
+            <!-- Header--><header class="main-header">
+            <div class="first-nav">
+                  <div class="container">
+                        <nav class="first-nav__links">
+                              <ul>
+                                    <li>
+                                         <a class="is-selected">
+                                                Accueil
+                                         </a>
+                                    </li>
+                                    <li>
+                                          <a href="docs.html">
+                                                Documentation
+                                          </a>
+                                    </li>
+                                    <li>
+                                          <a href="https://discord.gg/dstb4VDTAp" target="_blank">
+                                                Support
+                                          </a>
+                                    </li>
+                                    <li>
+                                          <a href="https://discord.com/oauth2/authorize?client_id=959802171493335120&permissions=8&scope=bot" target="_blank">
+                                                Inviter Ice
+                                          </a>
+                                    </li>
+                              </ul>
+                        </nav>
+                        <a class="first-nav__navcontrol icon icon_menu js-navcontrol" href="#">Menu</a>
+                  </div>
+            </div>
+            <div class="second-nav js-nav">
+                  <div class="container">
+                        <a class="second-nav__logo">
+                              <span>ICS</span>
+                        </a><nav class="menu">
+                        <ul>
+                              <li>
+                                    <a class="js-link js-anchor is-selected" href="#home">Home</a>
+                              </li>
+                              <li>
+                                    <a class="js-link js-anchor" href="#about">About</a>
+                              </li>
+                              <li>
+                                    <a class="js-link js-anchor" href="#services">Présentation</a>
+                              </li>
+                              <li>
+                                    <a class="js-link js-anchor" href="#process">Mon histoire</a>
+                              </li>
+                              <li>
+                                    <a class="js-link js-anchor" href="#contacts">Contact</a>
+                              </li>
+                        </ul>
+                        </nav>
+                  </div>
+            </div>
+            </header><!-- Home section--><section class="home-section" id="home">
+            <div class="home-section__bg">
+            </div>
+            <div class="home-section__overlay">
+                  <div class="container">
+                        <header class="home-section__header">
+                              <h1>༒ Ice Shield</h1>
+                              <h2>Bot de protection et d'utilitaires.</h2>
+                        </header>
+                  </div>
+            </div>
+            </section><!-- About section--><section class="about-section" id="about">
+            <div class="container">
+                  <div class="about-card">
+                        <header class="about-card__header">
+                              <h2>À propos du bot</h2>
+                        </header>
+                        <div class="about-card__info">
+                              <p>༒ Ice Shield est un bot qui protège vos serveurs ! Il possède de nombreuses commandes qui ont cet objectif, mais également un grand nombre de commandes utilitaires ! 
+                              </p><blockquote><p>Ne deviens pas quelqu'un pour les autres,<br>Deviens quelqu'un pour toi-même.</p></blockquote>
+                              <p>Cette citation faisant partie de mes principes, je ne la respecte pas en faisant ce bot, ayant l'objectif d'améliorer <strong>vos</strong> serveurs !</p>
+                              <p class="about-card__info-status"><span>Statut actuel :</span>Valable pour toujours</p>
+                        </div>
+                  </div>
+            </div>
+            </section><!-- Services section-->
+            <section class="common-section" id="services">
+                  <div class="container">
+                        <header class="common-section__header">
+                              <h2>Présentation</h2>
+                              <h4>Fonctionnalités et objectifs</h4>
+                        </header>
+                        <div class="grid-container">
+                              <ul class="services services_advisory">
+                                    <li class="services__item icon icon_research">
+                                          <h4>Objectif Principaux</h4>
+                                          <p>Mes objectifs concernant ce bot sont de le rendre toujours meilleur, de toujours lui ajouter des fonctions et de corriger toutes ses erreurs. Je souhaite qu'il devienne certifié et que mon niveau en codage continue d'augmenter.</p>
+                                    </li>
+                                    <li class="services__item icon icon_strategy">
+                                          <h4>Fonctions de modération et de protection</h4>
+                                          <p>Ice Shield possède de nombreuses fonctions de modération, certaines plus simples que d'autres, comme par exemple : $ban, $kick, $timeout... Ces fonctions permettent de faire respecter le règlement et votre autorité sans trop vous embêter. Au niveau de la protection, Ice Shield possède par exemple le $antilink, qui empêche les utilisateurs d'envoyer des liens dans votre serveur !</p>
+                                    </li>
+                              </ul>
+                              <ul class="services services_pm">
+                                    <li class="services__item icon icon_recover">
+                                          <h4>Objectifs temporaires</h4>
+                                          <p>Actuellement, mes objectifs sont assez clairs. Je souahite développer ce site afin d'avoir un support en ligne également. Une commande est encore fortement fauteuse de troubles dans mon bot et je souhaite la réparer également au plus vite afin qu'elle ne cause pas trop de problèmes.</p>
+                                    </li>
+                                    <li class="services__item icon icon_plan">
+                                          <h4>Fonctions de fun et d'utilitaire</h4>
+                                          <p>Au niveau du fun, ice shield sera source d'amusement pour votre serveur, comme par exemple grâce à ses commandes $oogway ou $drip. Il permet de créer vos propres mêmes avec différentes commandes ! En termes d'utilitaire, il possède par exemple $roleinfo, $color, $table, qui permettent de s'amuser tout en étant pratiques et utiles !</p>
+                                    </li>
+                              </ul>
+                              <div class="advantages">
+                                    <h2>Pourquoi Ice Shield ?</h2>
+                                    <blockquote>
+                                          <p>Ice Shield est vraiment complet et avancé, il possède un grand nombre de commandes, malgré le peu citées ci-dessus, je vous invite à visiter la documentation pour en savoir plus. Il est totalement multifonction et en cas de difficulté, je reste toujours disponible !</p>
+                                          <cite>Le projet ༒ Ice Shield</cite>
+                                    </blockquote>
+                              </div>
+                        </div>
+                  </div>
+            </section>
+            <!-- Process section-->
+            <section class="common-section" id="process"><div class="container">
+                  <header class="common-section__header">
+                        <h2>Mon histoire</h2>
+                        <h4>Mes débuts dans le codage, mon évolution au fil du temps.</h4>
+                  </header>
+                  <div class="grid-container">
+                        <ul class="process">
+                              <li class="process__step process__step_research">
+                                    <div class="process__step-icon icon icon_research is-active">
+                                    </div>
+                              </li>
+                              <li class="process__step-info process__step-info_research is-active">
+                                    <h3><span>Étape 1</span> &mdash; Découvrir le bdfd</h3>
+                                    <p>Un jour, je me suis mis en tête de développer des bots sur discord. On m'a alors proposé d'essayer le bdfd.</p>
+                              </li>
+                              <li class="process__step process__step_develop">
+                                    <div class="process__step-icon icon icon_develop">
+                                    </div>
+                              </li>
+                              <li class="process__step-info process__step-info_develop">
+                                    <h3><span>Étape 2</span> &mdash; Développer mon propre style</h3>
+                                    <p>En me basant sur des tutos au départ, j'ai rapidement développé mon style et décidé de coder moi-même et d'en découvrir plus.</p>
+                              </li>
+                              <li class="process__step process__step_deploy">
+                                    <div class="process__step-icon icon icon_deploy">
+                                    </div>
+                              </li>
+                              <li class="process__step-info process__step-info_deploy">
+                                    <h3><span>Étape 3</span> &mdash; Apprendre de nouveau langages</h3>
+                                    <p>Le bdfd étant assez ennuyeux, j'ai alors décidé d'apprendre de nouveau langages, comme le aoi.js, le javascript et le html.</p>
+                              </li>
+                              <li class="process__step process__step_deliver">
+                                    <div class="process__step-icon icon icon_deliver">
+                                    </div>
+                              </li>
+                              <li class="process__step-info process__step-info_deliver">
+                                    <h3><span>Étape 4</span> &mdash; En arriver là</h3>
+                                    <p>Maintenant, j'en suis ici, à vous raconter mon histoire et à vous présenter mon bot via ce site, codé en html, en css ainsi qu'en javascript !</p>
+                              </li>
+                        </ul>
+                  </div>
+                  </div>
+            </section>
+            <!-- Contacts section-->
+            <div class="contacts-section" id="contacts">
+                  <div class="container">
+                        <section class="contact-card">
+                              <header class="contact-card__header">
+                                    <h2>Contact</h2>
+                                    <h4>En cas de problème, de demande, n'hésitez pas à me contacter !</h4>
+                              </header>
+                              <div class="contact-info">
+                                    <div class="contact-info__logo">ICS</div>
+                                    <div class="contact-info__group">
+                                          <div class="contact-info__additional">
+                                                <p>En cas de problème, je reste toujours disponible.</p>
+                                                <p>Vous pouvez également me contacter si vous avez des questions.</p>
+                                                <p>N'hésitez pas !</p>
+                                          </div>
+                                          <div class="contact-info__vcard vcard">
+                                                <h4 class="fn org">slump.exe</h4>
+                                                <p class="role title">Développeur</p>
+                                                <p class="icon icon_mail">
+                                                      <a class="email" href="https://github.com/slump-exe" target="_blank">discord : slump.exe#6585</a>
+                                                </p>
+                                           </div>
+                                          <ul class="contact-info__social">
+                                                <li>
+                                                      <a class="icon icon_fb" rel="nofollow" href="https://discord.gg/dstb4VDTAp" target="_blank">Support</a>
+                                                </li>
+                                                <li>
+                                                      <a class="icon icon_twi" rel="nofollow" href="https://github.com/slump-exe" target="_blank">Mon Github</a>
+                                                </li>
+                                                <li>
+                                                      <a class="icon icon_gplus" rel="nofollow">Page des commandes</a>
+                                                </li>
+                                                <li>
+                                                      <a class="icon icon_vk" rel="nofollow" href="https://discord.com/oauth2/authorize?client_id=959802171493335120&permissions=8&scope=bot" target="_blank">invite ice</a>
+                                                </li>
+                                                <li>
+                                                      <a class="icon icon_in" rel="nofollow">waiting</a>
+                                                </li>
+                                                <li>
+                                                      <a class="icon icon_rss" rel="nofollow">RSS feed... maybe</a>
+                                                </li>
+                                          </ul>
+                                    </div>
+                              </div>
+                        </section>
+                  </div>
+                  <div class="gmap" id="gmap"></div>
+            </div>
+            <!-- Footer-->
+            <footer class="main-footer">
+                  <div class="container">
+                        <p class="main-footer__copyright">&copy;&nbsp;<span>slump.exe</span></p>
+                        <a class="main-footer__gotop icon icon_gotop js-anchor" href="#home">To top!</a>
+                        <p class="main-footer__links">Remerciements : Maxim Orlov (design), Daizo (inspi), Zerdax (soutien)</p>
+                  </div>
+            </footer>
+            <script src="static/js/body.min.js"></script>
+      </body>
+</html>

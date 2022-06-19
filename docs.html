@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="fr">
+      <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+            <title>
+                  Ice Shield | Advanced Discord Bot
+            </title>
+            <meta name="description" content="Ice Shield, bot discord avancé. Il possède des fonctions de modération, de gestion, d'utilitaire et de fun. Venez découvrir ses nombreuses qualités et choisissez le pour votre serveur !">
+            <meta name="keywords" content="Bot,Discord,Modération,Moderation,Fun,Utilitaire,Musique,Gestion">
+            <link rel="shortcut icon" href="favicon.ico">
+            <link rel="shortcut icon" href="static/images/favicons/favicon.png" type="image/x-icon">
+            <link rel="apple-touch-icon" href="static/images/favicons/apple-touch-icon.png">
+            <link rel="apple-touch-icon-precomposed" href="static/images/favicons/apple-touch-icon-precomposed.png">
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800%7COpen+Sans+Condensed:300&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+            <link rel="stylesheet" href="static/css/body.css">
+            <script src="static/js/head.min.js"></script>
+      </head>
+      <body>
+            <script>progressJs().setOptions({overlayMode: true, theme: 'custom'}).start();
+      if(window.attachEvent) {
+          window.attachEvent('onload', function(){ progressJs().end(); });
+      } else {
+          if(window.onload) {
+              var curronload = window.onload;
+              var newonload = function() {
+                  curronload();
+                  progressJs().end();
+              };
+              window.onload = newonload;
+          } else {
+              window.onload = function(){ progressJs().end(); };
+          }
+      }</script>
+            <!-- Header--><header class="main-header">
+            <div class="first-nav">
+                  <div class="container">
+                        <nav class="first-nav__links">
+                              <ul>
+                                    <li>
+                                         <a href="index.html">
+                                                Accueil
+                                         </a>
+                                    </li>
+                                    <li>
+                                          <a class="is-selected">
+                                                Documentation
+                                          </a>
+                                    </li>
+                                    <li>
+                                          <a href="https://discord.gg/dstb4VDTAp" target="_blank">
+                                                Support
+                                          </a>
+                                    </li>
+                                    <li>
+                                          <a href="https://discord.com/oauth2/authorize?client_id=959802171493335120&permissions=8&scope=bot" target="_blank">
+                                                Inviter Ice
+                                          </a>
+                                    </li>
+                              </ul>
+                        </nav>
+                        <a class="first-nav__navcontrol icon icon_menu js-navcontrol" href="#">Menu</a>
+                  </div>
+            </div>
+            <div class="second-nav js-nav">
+                  <div class="container">
+                        <a class="second-nav__logo">
+                              <span>ICS</span>
+                        </a><nav class="menu">
+                        <ul>
+                              <li>
+                                    <a class="js-link js-anchor" href="#util">Utilitaire</a>
+                              </li>
+                              <li>
+                                    <a class="js-link js-anchor" href="#fun">Fun</a>
+                              </li>
+                              <li>
+                                    <a class="js-link js-anchor" href="#mdodo">Modération</a>
+                              </li>
+                              <li>
+                                    <a class="js-link js-anchor" href="#config">Configuration</a>
+                              </li>
+                              <li>
+                                    <a class="js-link js-anchor" href="#gestion">Gestion des rôles</a>
+                              </li>
+                        </ul>
+                        </nav>
+                  </div>
+            </div>
+            </header><!-- Home section--><section class="home-section">
+            <div class="home-section__bg">
+            </div>
+            <div class="home-section__overlay">
+                  <div class="container">
+                        <header class="home-section__header">
+                              <h1>༒ Ice Shield</h1>
+                              <h2>Page de documentation.</h2>
+                        </header>
+                  </div>
+            </div>
+            </section><!-- About section--><section class="about-section">
+            <div class="container">
+                  <div class="about-card">
+                        <header class="about-card__header">
+                              <h2>Légende de la documentation</h2>
+                        </header>
+                        <div class="about-card__info">
+                              <p> Un grand nombre de commandes sont ajoutées régulièrement et le site n'est pas toujours à jour, merci de ta compréhension.<br> 
+                                    <br>
+                                    <em><ur>Signalétique :</ur></em> <br>
+                                    <ul>
+                                          <li>Le préfixe par défaut étant <em>$</em>, ce préfixe est utilisé dans la documentation mais peut dépendre du serveur</li>
+                                          <li>Les mots écrits entre [crochets] sont des conditions requises</li>
+                                          <li>Les mots écrits entre &lt;signes&gt; sont des conditions facultatives</li>
+                                          <li>Les aliases sont les noms de commandes alternatifs, raccourcis</li>
+                                    </ul>
+                              </p>
+                        </div>
+                  </div>
+            </div>
+            </section><!-- Services section-->
+            <section class="tableaun" id="util">
+            <table class="table-style">
+                  <thead>
+                        <tr>
+                              <th colspan="4">🔭 Commandes Utilitaires</th>
+                        </tr>
+                        <tr>
+                              <th>Nom</th>
+                              <th>Description</th>
+                              <th>Utilisation</th>
+                              <th>Exemple</th>
+                        </tr>
+                  </thead>
+                  <tbody>
+                        <tr>
+                              <th>Userinfo</th>
+                              <td>donne les informations d'un utilisateur</td>
+                              <td><em>$userinfo <@user><br>
+                                    alias : $ui <@user></em></td>
+                              <td><a href="static/images/docs/ui.png" target="_blank">exemple :</a><br>
+                                    $ui et $ui @user</td>
+                        </tr>
+                        <tr>
+                              <th>Avatar</th>
+                              <td>donne l'avatar d'un utilisateur</td>
+                              <td><em>$avatar <@user> <br>
+                                    alias : $pic <@user></em></td>
+                              <td> <a href="static/images/docs/pic.png" target="_blank">exemple :</a> <br>
+                                    $avatar et $avatar @user </td>
+                        </tr>
+                        <tr>
+                              <th>Banner</th>
+                              <td>donne la bannière d'un utilisateur</td>
+                              <td><em>$banner <@user></em></td>
+                              <td> <a href="static/images/docs/banner.png" target="_blank">exemple :</a> <br>
+                                    $banner et $banner @user </td>
+                        </tr>
+                        <tr>
+                              <th>Snipe</th>
+                              <td>donne le dernier message supprimé</td>
+                              <td><em>$snipe <#channel> <br>
+                                    alias : $s <#channel></em></td>
+                              <td> <a href="static/images/docs/snipe.png" target="_blank">exemple :</a> <br>
+                                    $snipe</td> 
+                        </tr>
+                        <tr>
+                              <th>Snipe Edit</th>
+                              <td>donne le dernier message modifié</td>
+                              <td><em>$snipe-edit <#channel> <br>
+                                    alias : $se <#channel></em></td>
+                              <td> <a href="static/images/docs/snipee.png" target="_blank">exemple :</a> <br>
+                                    $snipe-edit</td> 
+                        </tr>
+                        <tr>
+                              <th>Messages</th>
+                              <td>donne le nombre de messages d'un utilisateur</td>
+                              <td><em>$msg <@user></em></td>
+                              <td><a href="static/images/docs/msg.png" target="_blank">exemple :</a><br>
+                                    $msg et $msg @user</td>
+                        </tr>
+                        <tr>
+                              <th>Voice</th>
+                              <td>donne les informations du vocal d'un utilisateur</td>
+                              <td><em>$voice <@user></em></td>
+                              <td><a href="static/images/docs/voice.png" target="_blank">exemple :</a><br>
+                                    $voice et $voice @user</td>
+                        </tr>
+                        <tr>
+                              <th>Server Pic</th>
+                              <td>donne l'avatar du serveur</td>
+                              <td><em>$serverpic<br>
+                                    alias : $spi</em></td>
+                              <td><a href="static/images/docs/servpic.png" target="_blank">exemple :</a><br>
+                                    $serverpic</td>
+                        </tr>
+                        <tr>
+                              <th>Server Banner</th>
+                              <td>donne la bannière du serveur</td>
+                              <td><em>$serverbanner<br>
+                                    alias : $sb</em></td>
+                              <td><a href="static/images/docs/servban.png" target="_blank">exemple :</a><br>
+                                    $sb</td>
+                        </tr>
+                        <tr>
+                              <th>Role Info</th>
+                              <td>donne les information d'un rôle</td>
+                              <td><em>$roleinfo [id de rôle]<br>
+                                    alias : $ri [id de rôle]</em></td>
+                              <td><a href="static/images/docs/roleinfo.png" target="_blank">exemple :</a><br>
+                                    $roleinfo [971378260514582588]</td>
+                        </tr>
+                        <tr>
+                              <th>Tableau Périodique</th>
+                              <td>donne les informations d'un élément du tableau périodique</td>
+                              <td><em>$table [numéro d'élément atomique]</em></td>
+                              <td><a href="static/images/docs/table.png" target="_blank">exemple :</a><br>
+                                    $table 1</td>
+                        </tr>
+                        <tr>
+                              <th>Google Image</th>
+                              <td>fait une recherche google image</td>
+                              <td><em>$image [mots-clés]<br></em></td>
+                              <td><a href="static/images/docs/chien.png" target="_blank">exemple :</a><br>
+                                    $image chien</td>
+                        </tr>
+                        <tr>
+                              <th>Couleur</th>
+                              <td>donne des informations sur une couleur</td>
+                              <td><em>$color [HEX]</em></td>
+                              <td><a href="static/images/docs/color.png" target="_blank">exemple :</a><br>
+                                    $color aeb7e4</td>
+                        </tr>
+                        <tr>
+                              <th>Couleur Aléatoire</th>
+                              <td>donne des informations sur une couleur aléatoire</td>
+                              <td><em>$randomcolor<br>
+                                    alias : $rc</em></td>
+                              <td><a href="static/images/docs/randomcolor.png" target="_blank">exemple :</a><br>
+                                    $randomcolor</td>
+                        </tr>
+                  </tbody>
+            </table>
+            <br>
+            <br>
+            <br>
+            </section>
+            
+
+            <section class="tableaudeux" id="fun">
+            <table class="table-style">
+                  <thead>
+                        <tr>
+                              <th colspan="4">🎳 Commandes Fun</th>
+                        </tr>
+                        <tr>
+                              <th>Nom</th>
+                              <th>Description</th>
+                              <th>Utilisation</th>
+                              <th>Exemple</th>
+                        </tr>
+                  </thead>
+                  <tbody>
+                        <tr>
+                              <th>Boule Magique</th>
+                              <td>répond à la question posée</td>
+                              <td><em>$8ball [question]</em></td>
+                              <td><a href="static/images/docs/ball.png" target="_blank">exemple :</a><br>
+                                    $8ball ice shield est cool ?</td>
+                        </tr>
+                        <tr>
+                              <th>Codage Binaire</th>
+                              <td>traduit votre message en binaire</td>
+                              <td><em>$encode [message]</em></td>
+                              <td><a href="static/images/docs/binaire.png" target="_blank">exemple :</a><br>
+                                    $encode salut !</td>
+                        </tr>
+                        <tr>
+                              <th>Décodage binaire</th>
+                              <td>traduit un message binaire vers un message normal</td>
+                              <td><em>$decode [message binaire]</em></td>
+                              <td><a href="static/images/docs/db.png" target="_blank">exemple :</a><br>
+                                    $decode 0111100101101111</td>
+                        </tr>
+                        <tr>
+                              <th>Morse</th>
+                              <td>traduit votre message en morse</td>
+                              <td><em>$morse [message]</em></td>
+                              <td><a href="static/images/docs/morse.png" target="_blank">exemple :</a><br>
+                                    $morse salut</td>
+                        </tr>
+                        <tr>
+                              <th>Car</th>
+                              <td>permet de connaître votre future voiture</td>
+                              <td><em>$car <@user></em></td>
+                              <td><a href="static/images/docs/car.png" target="_blank">exemple :</a><br>
+                                    $car</td>
+                        </tr>
+                        <tr>
+                              <th>Clown</th>
+                              <td>oh, regarde ! un clown !</td>
+                              <td><em>$clown <@user></em></td>
+                              <td><a href="static/images/docs/clown.png" target="_blank">exemple :</a><br>
+                                    $clown</td>
+                        </tr>
+                        <tr>
+                              <th>Drake</th>
+                              <td>reproduit le même de drake</td>
+                              <td><em>$drake [partie 1],[partie 2]</em></td>
+                              <td><a href="static/images/docs/drake.png" target="_blank">exemple :</a><br>
+                                    $drake snow,ice</td>
+                        </tr>
+                        <tr>
+                              <th>Fact</th>
+                              <td>écrivez dans le livre des vérités !</td>
+                              <td><em>$fact [message]</em></td>
+                              <td><a href="static/images/docs/fact.png" target="_blank">exemple :</a><br>
+                                    $fact ice = bg</td>
+                        </tr>
+                        <tr>
+                              <th>Gay</th>
+                              <td>un avatar... lgbt ??</td>
+                              <td><em>$gay <@user></em></td>
+                              <td><a href="static/images/docs/gay.png" target="_blank">exemple :</a><br>
+                                    $gay</td>
+                        </tr>
+                        <tr>
+                              <th>Gun</th>
+                              <td>pour le moins menaçant</td>
+                              <td><em>$gun <@user></em></td>
+                              <td><a href="static/images/docs/gun.png" target="_blank">exemple :</a><br>
+                                    $gun</td>
+                        </tr>
+                        <tr>
+                              <th>Instagram</th>
+                              <td>effectue une recherche instagram</td>
+                              <td id="space"><em>$insta [username]</em></td>
+                              <td id="space"><a href="static/images/docs/insta.png" target="_blank">exemple :</a><br>
+                                    $insta melimtx</td>
+                        </tr>
+                        <tr>
+                              <th>Love Test</th>
+                              <td id="space">sont-ils compatibles ?</td>
+                              <td id="space"><em>$love [@user] <@user><br>
+                                    alias : $ship [@user] <@user></em></td>
+                              <td><a href="static/images/docs/love.png" target="_blank">exemple :</a><br>
+                                    $love @user</td>
+                        </tr>
+                        <tr>
+                              <th>Meme</th>
+                              <td id="space">donne un même random</td>
+                              <td id="space"><em>$meme</em></td>
+                              <td><a href="static/images/docs/meme.png" target="_blank">exemple :</a><br>
+                                    $meme</td>
+                        </tr>
+                        <tr>
+                              <th>Maître Oogway</th>
+                              <td id="space">créer une citation de maître oogway</td>
+                              <td id="space"><em>$oogway [message]</em></td>
+                              <td><a href="static/images/docs/oog.png" target="_blank">exemple :</a><br>
+                                    $oogway ice shield = goat</td>
+                        </tr>
+                        <tr>
+                              <th>Pikachu</th>
+                              <td id="space">pikachu est... troublé ?</td>
+                              <td id="space"><em>$pikachu [message]</em></td>
+                              <td><a href="static/images/docs/pika.png" target="_blank">exemple :</a><br>
+                                    $pikachu étrange</td>
+                        </tr>
+                        <tr>
+                              <th>Guess The Pokemon</th>
+                              <td id="space">devinez le pokemon !</td>
+                              <td id="space"><em>$pokemon</em></td>
+                              <td><a href="static/images/docs/poke.png" target="_blank">exemple :</a><br>
+                                    $pokemon</td>
+                        </tr>
+                        <tr>
+                              <th>Pray</th>
+                              <td id="space">paix à son âme</td>
+                              <td id="space"><em>$pray <@user></em></td>
+                              <td><a href="static/images/docs/pray.png" target="_blank">exemple :</a><br>
+                                    $pray</td>
+                        </tr>
+                        <tr>
+                              <th>Sad Cat</th>
+                              <td id="space">moi aussi ça me rend triste</td>
+                              <td id="space"><em>$sad [message]</em></td>
+                              <td><a href="static/images/docs/sad.png" target="_blank">exemple :</a><br>
+                                    $sad les bugs de ice shield</td>
+                        </tr>
+                        <tr>
+                              <th>Snake</th>
+                              <td id="space">jouez à snake !</td>
+                              <td id="space"><em>$snake</em></td>
+                              <td><a href="static/images/docs/snake.png" target="_blank">exemple :</a><br>
+                                    $snake</td>
+                        </tr>
+                        <tr>
+                              <th id="space">Supreme Drip</th>
+                              <td id="space">quel flow !!</td>
+                              <td id="space"><em>$supreme <@user><br>
+                                    alias : $drip <@user></em></td>
+                              <td><a href="static/images/docs/drip.png" target="_blank">exemple :</a><br>
+                                    $supreme</td>
+                        </tr>
+                        <tr>
+                              <th id="space">Trigger</th>
+                              <td id="space">sacrément énervé</td>
+                              <td id="space"><em>$trigger <@user></em></td>
+                              <td><a href="static/images/docs/trigger.png" target="_blank">exemple :</a><br>
+                                    $trigger</td>
+                        </tr>
+                        <tr>
+                              <th id="space">Wanted</th>
+                              <td id="space">attrapez le !</td>
+                              <td id="space"><em>$wanted <@user></em></td>
+                              <td><a href="static/images/docs/want.png" target="_blank">exemple :</a><br>
+                                    $wanted</td>
+                        </tr>
+                        <tr>
+                              <th id="space">Wasted</th>
+                              <td id="space">il s'est fait attraper...</td>
+                              <td id="space"><em>$wasted <@user></em></td>
+                              <td><a href="static/images/docs/wast.png" target="_blank">exemple :</a><br>
+                                    $wasted</td>
+                        </tr>
+                        <tr>
+                              <th id="space">What</th>
+                              <td id="space">bruh, didn't understood ?</td>
+                              <td id="space"><em>$what [lien d'image],[texte 1],[texte 2]</em></td>
+                              <td><a href="static/images/docs/bruh.png" target="_blank">exemple</a></td>
+                        </tr>
+                  </tbody>
+            </table>
+            </section>
+
+
+
+
+            <!-- Contacts section-->
+            <div class="contacts-section" id="contacts">
+                  <div class="container">
+                        <section class="contact-card">
+                              <header class="contact-card__header">
+                                    <h2>Contact</h2>
+                                    <h4>En cas de problème, de demande, n'hésitez pas à me contacter !</h4>
+                              </header>
+                              <div class="contact-info">
+                                    <div class="contact-info__logo">ICS</div>
+                                    <div class="contact-info__group">
+                                          <div class="contact-info__additional">
+                                                <p>En cas de problème, je reste toujours disponible.</p>
+                                                <p>Vous pouvez également me contacter si vous avez des questions.</p>
+                                                <p>N'hésitez pas !</p>
+                                          </div>
+                                          <div class="contact-info__vcard vcard">
+                                                <h4 class="fn org">slump.exe</h4>
+                                                <p class="role title">Développeur</p>
+                                                <p class="icon icon_mail">
+                                                      <a class="email" href="https://github.com/slump-exe" target="_blank">discord : slump.exe#6585</a>
+                                                </p>
+                                           </div>
+                                          <ul class="contact-info__social">
+                                                <li>
+                                                      <a class="icon icon_fb" rel="nofollow" href="https://discord.gg/dstb4VDTAp" target="_blank">Support</a>
+                                                </li>
+                                                <li>
+                                                      <a class="icon icon_twi" rel="nofollow" href="https://github.com/slump-exe" target="_blank">Mon Github</a>
+                                                </li>
+                                                <li>
+                                                      <a class="icon icon_gplus" rel="nofollow">Page des commandes</a>
+                                                </li>
+                                                <li>
+                                                      <a class="icon icon_vk" rel="nofollow" href="https://discord.com/oauth2/authorize?client_id=959802171493335120&permissions=8&scope=bot" target="_blank">invite ice</a>
+                                                </li>
+                                                <li>
+                                                      <a class="icon icon_in" rel="nofollow">waiting</a>
+                                                </li>
+                                                <li>
+                                                      <a class="icon icon_rss" rel="nofollow">RSS feed... maybe</a>
+                                                </li>
+                                          </ul>
+                                    </div>
+                              </div>
+                        </section>
+                  </div>
+                  <div class="gmap" id="gmap"></div>
+            </div>
+            <!-- Footer-->
+            <footer class="main-footer">
+                  <div class="container">
+                        <p class="main-footer__copyright">&copy;&nbsp;<span>slump.exe</span></p>
+                        <a class="main-footer__gotop icon icon_gotop js-anchor" href="#util">To top!</a>
+                        <p class="main-footer__links">Remerciements : Maxim Orlov (design), Daizo (inspi), Zerdax#2043 (soutien)</p>
+                  </div>
+            </footer>
+            <script src="static/js/body.min.js"></script>
+      </body>
+</html>
